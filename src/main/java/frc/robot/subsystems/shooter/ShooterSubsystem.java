@@ -1,5 +1,4 @@
 package frc.robot.subsystems.shooter;
-
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
@@ -16,7 +15,7 @@ public class ShooterSubsystem extends SubsystemBase {
     // Rookie TODO: Add a private double field, initially 0.0. Clamp rpm to
     // [0.0, Constants.Practice.MAX_SHOOTER_RPM] and store the result.
     thing = MathUtil.clamp(rpm,0.0, Constants.Practice.MAX_SHOOTER_RPM); 
-    // Import frc.robot.Constants and test zero, 5000 RPM, and out-of-range values.
+    // Import frc.robot.Constants and test zero, 5000 RPM, and out-sdof-range values.
   }
 
   /** Returns the stored target speed once the rookie exercise is implemented. */
