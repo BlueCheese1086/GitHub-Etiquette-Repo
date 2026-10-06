@@ -5,19 +5,23 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 /** Hardware-free intake practice. This subsystem does not control a real motor. */
 public class IntakeSubsystem extends SubsystemBase {
   /** Starts the practice intake once the rookie exercise is implemented. */
+  private boolean running = false;
+
   public void start() {
     // Rookie TODO: Add a private boolean field, initially false, and set it to true here.
+    this.running = true;
   }
 
   /** Stops the practice intake once the rookie exercise is implemented. */
   public void stop() {
     // Rookie TODO: Set your running field to false. Calling stop() twice should be safe.
+    this.running = false;
   }
 
   /** Returns whether the practice intake is running. */
   public boolean isRunning() {
     // Rookie TODO: Return your field. Test initial state, start(), stop(), and repeated calls.
-    return false;
+    return running;
   }
 
   @Override
